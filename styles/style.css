@@ -266,6 +266,15 @@ section {
     margin: 20px;
     text-align: center;
   }
+  .features {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .fc-right-content-image {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.8rem;
+  }
 }
 
 /* medium device */
@@ -275,5 +284,9 @@ section {
   }
   .our-features {
     margin: 20px 0;
+  }
+  .features {
+    flex-direction: column;
+    margin-left: 90px;
   }
 }
