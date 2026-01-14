@@ -51,6 +51,8 @@
 
 header {
   padding-bottom: 50px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 main {
@@ -130,7 +132,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-.image-container {
+.teams-image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
@@ -163,8 +165,25 @@ section {
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-links, .teams {
+  .nav-links,
+  .teams {
     flex-direction: column;
   }
+  .teams-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features {
+    margin: 20px;
+    text-align: center;
+  }
+}
 
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .our-features {
+    margin: 20px 0;
+  }
 }
