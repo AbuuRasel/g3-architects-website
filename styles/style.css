@@ -51,8 +51,9 @@
 
 header {
   padding-bottom: 50px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 1.8rem 1rem;
 }
 
 main {
@@ -63,6 +64,43 @@ main {
 
 section {
   margin-top: 100px;
+}
+.section-title {
+  max-width: 450px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.section-description {
+  max-width: 530px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #727272;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+.features-card {
+  max-width: 586px;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 1.25rem;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 1);
+}
+
+.features-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.28rem;
+  text-align: left;
+  color: #131313;
+  margin-bottom: 0.6rem;
+}
+
+.features-description {
+  max-width: 514px;
+  font-size: 1rem;
+  line-height: 1.28rem;
+  color: #727272;
 }
 
 /* header style */
@@ -144,22 +182,74 @@ section {
   border: none;
   border-radius: 8px;
 }
-.feature-title {
-  max-width: 450px;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
+
 #quick-list {
   font-weight: 500;
 }
 
-.feature-description {
-  max-width: 530px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #727272;
-  margin-top: 24px;
-  margin-bottom: 30px;
+/* features container */
+.features {
+  justify-content: center;
+}
+
+.fc-left-content {
+  max-width: 586px;
+  border-radius: 8px;
+  margin: 2.5rem 3.1rem;
+  /* height: 61rem; */
+  /* padding: 20px 70px; */
+}
+
+.fc-left-content .accent-title {
+  position: relative;
+  padding-left: 20px;
+}
+.accent-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 90%;
+  background-color: #ff900e;
+  border-radius: 8px;
+}
+
+.fc-right-content {
+  position: relative;
+  max-width: 800px;
+}
+.fc-right-content-image {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+.experiance-badge {
+  position: absolute;
+  max-width: 342px;
+  border-radius: 8px;
+  background-color: #ff900e;
+  color: white;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  bottom: 20px;
+  left: 15px;
+}
+
+.experiance-badge h3 {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.experiance-badge span {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
 }
 
 /* responsive media query */
